@@ -2,6 +2,7 @@ package com.chen.bean;
 
 import com.chen.constant.Constant;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -39,13 +40,20 @@ public class Data {
      */
     private List<Policy> policies;
     /**
-     * 未知。
+     * 是否启用，0否1是。
      */
     private int power;
     /**
-     * 处理方式。
+     * 处理方式，1询问3自动阻止。
      */
     private int treatment;
+
+    public void addPolicy(Policy policy) {
+        if (policies == null) {
+            policies = new ArrayList<>();
+        }
+        this.policies.add(policy);
+    }
 
     public String getProcname() {
         return procname;

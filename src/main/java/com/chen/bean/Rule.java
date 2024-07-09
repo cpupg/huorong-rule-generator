@@ -1,5 +1,6 @@
 package com.chen.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,6 +21,13 @@ public class Rule {
      * 规则清单。
      */
     private List<Data> data;
+
+    public void addData(Data data) {
+        if (this.data == null) {
+            this.data = new ArrayList<>();
+        }
+        this.data.add(data);
+    }
 
     public String getVer() {
         return ver;

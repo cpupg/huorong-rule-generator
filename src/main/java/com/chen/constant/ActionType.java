@@ -49,9 +49,13 @@ public enum ActionType {
     /**
      * 类型。
      */
-    private int type;
+    private final int type;
 
-    private ActionType(int type) {
+    ActionType(int type) {
         this.type = type;
+    }
+
+    public int getType() {
+        return type;
     }
 }

@@ -19,9 +19,13 @@ public enum MonType {
     /**
      * 规则类型。
      */
-    private int type;
+    private final int type;
 
     MonType(int type) {
         this.type = type;
+    }
+
+    public int getType() {
+        return type;
     }
 }

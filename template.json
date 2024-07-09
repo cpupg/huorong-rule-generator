@@ -1,0 +1,15 @@
+{
+  "program_names": [
+    "path"
+  ],
+  "rule_names": [
+    "name1"
+  ],
+  "mon_type": "FILE",
+  "action_type": "TYPE_15",
+  "power": "TRUE",
+  "treatment": "REJECT",
+  "resource_paths": [
+    "C:\\Users\\*"
+  ]
+}

@@ -9,6 +9,7 @@ import com.chen.constant.MonType;
 import com.chen.exception.CommonException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,16 +32,13 @@ public class GenerateService {
     /**
      * 规则路径。
      */
-    private String path;
-    /**
-     * 生成的规则文件。
-     */
-    private String ruleFile = "rule.json";
+    private final String path;
 
     public GenerateService(String path) {
         this.path = path;
         objectMapper = new ObjectMapper();
         objectMapper.setPropertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE);
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
     }
 
     /**
@@ -51,8 +49,12 @@ public class GenerateService {
         validateBaseData();
         String[] programNames = baseData.getProgramNames();
         String[] ruleNames = baseData.getRuleNames();
+        String ruleNameString = ArrayUtils.toString(ruleNames);
+        String resourcePaths = ArrayUtils.toString(baseData.getResourcePaths());
+        LOGGER.info("共{}个规则{},涉及资源{}", programNames.length, ruleNameString, resourcePaths);
         Rule rule = new Rule();
         for (int i = 0; i < programNames.length; i++) {
+            LOGGER.info("当前程序:{}", programNames[i]);
             String programName = programNames[i];
             Data data = new Data();
             data.setProcname(programName);
@@ -69,7 +71,7 @@ public class GenerateService {
             }
         }
         try {
-            objectMapper.writeValue(new File(ruleFile), rule);
+            objectMapper.writeValue(new File("rule.json"), rule);
         } catch (IOException e) {
             throw new CommonException("写入规则失败", e);
         }
@@ -77,8 +79,6 @@ public class GenerateService {
 
     /**
      * 解析规则文件。
-     *
-     * @return 规则内容。
      */
     private void parseBaseData() {
         LOGGER.info("解析文件:{}", path);

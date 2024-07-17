@@ -3,7 +3,7 @@ out/
 *.iml
 
 target/
-#
-#logs/
-#data/
-#temp/
+
+logs/
+data/
+temp/

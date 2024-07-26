@@ -1,4 +1,4 @@
-package com.chen.constant;
+package com.chen.huorongrule.constant;
 
 /**
  * 数字型布尔值。

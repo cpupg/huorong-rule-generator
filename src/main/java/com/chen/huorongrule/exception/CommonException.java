@@ -1,4 +1,4 @@
-package com.chen.exception;
+package com.chen.huorongrule.exception;
 
 /**
  * 通用异常，将检查异常转换为运行时异常，避免修改代码后需要改签名。

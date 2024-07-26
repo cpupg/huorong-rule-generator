@@ -1,9 +1,9 @@
-package com.chen.bean;
+package com.chen.huorongrule.bean;
 
-import com.chen.constant.ActionType;
-import com.chen.constant.BoolNum;
-import com.chen.constant.MonType;
-import com.chen.constant.TreatmentType;
+import com.chen.huorongrule.constant.ActionType;
+import com.chen.huorongrule.constant.BoolNum;
+import com.chen.huorongrule.constant.MonType;
+import com.chen.huorongrule.constant.TreatmentType;
 
 /**
  * 基础数据，可以由命令行输入，也可以从模板文件读取，用来生成规则。

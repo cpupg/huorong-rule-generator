@@ -1,12 +1,12 @@
-package com.chen.service;
+package com.chen.huorongrule.service;
 
-import com.chen.bean.BaseData;
-import com.chen.bean.Data;
-import com.chen.bean.Policy;
-import com.chen.bean.Rule;
-import com.chen.constant.ActionType;
-import com.chen.constant.MonType;
-import com.chen.exception.CommonException;
+import com.chen.huorongrule.bean.BaseData;
+import com.chen.huorongrule.bean.Data;
+import com.chen.huorongrule.bean.Policy;
+import com.chen.huorongrule.bean.Rule;
+import com.chen.huorongrule.constant.ActionType;
+import com.chen.huorongrule.constant.MonType;
+import com.chen.huorongrule.exception.CommonException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.SerializationFeature;

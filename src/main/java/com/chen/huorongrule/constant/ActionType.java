@@ -1,4 +1,4 @@
-package com.chen.constant;
+package com.chen.huorongrule.constant;
 
 /**
  * 操作类型。

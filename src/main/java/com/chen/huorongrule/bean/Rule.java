@@ -1,4 +1,4 @@
-package com.chen.bean;
+package com.chen.huorongrule.bean;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.chen;
+package com.chen.huorongrule;
 
-import com.chen.exception.CommonException;
-import com.chen.service.GenerateService;
+import com.chen.huorongrule.exception.CommonException;
+import com.chen.huorongrule.service.GenerateService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

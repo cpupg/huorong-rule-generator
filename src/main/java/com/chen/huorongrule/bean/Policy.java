@@ -1,6 +1,6 @@
-package com.chen.bean;
+package com.chen.huorongrule.bean;
 
-import com.chen.constant.Constant;
+import com.chen.huorongrule.constant.Constant;
 
 /**
  * 规则策略。

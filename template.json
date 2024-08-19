@@ -10,6 +10,14 @@
   "power": "TRUE",
   "treatment": "REJECT",
   "resource_paths": [
-    "C:\\Users\\*"
+    "C:\\Users\\username\\AppData\\Local\\Google",
+    "C:\\Users\\username\\AppData\\Local\\Microsoft",
+    "C:\\Users\\username\\AppData\\Local\\Mozilla",
+    "C:\\Users\\username\\AppData\\Roaming\\Google",
+    "C:\\Users\\username\\AppData\\Roaming\\Microsoft",
+    "C:\\Users\\username\\AppData\\Roaming\\Mozilla",
+    "C:\\Users\\username\\Documents",
+    "C:\\Users\\username\\Pictures",
+    "C:\\Users\\Sunshine\\Desktop"
   ]
 }

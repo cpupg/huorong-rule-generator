@@ -10,7 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <version.slf4j>2.0.13</version.slf4j>
-        <version.logback>1.5.6</version.logback>
+        <version.logback>1.5.13</version.logback>
         <version.commons-lang3>3.14.0</version.commons-lang3>
         <version.commons-beanutils>1.9.4</version.commons-beanutils>
         <version.junit>5.10.3</version.junit>
